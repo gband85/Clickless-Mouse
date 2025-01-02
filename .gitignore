@@ -8,3 +8,10 @@ Clickless Mouse/Clickless Mouse/obj/*
 Clickless Mouse/Clickless Mouse/bin/*
 Clickless Mouse/packages/*
 Clickless Mouse/Clickless Mouse/obj/Debug/*
+/Clickless Mouse/Clickless Mouse/obj/Debug/MainWindow.baml
+/Clickless Mouse/Clickless Mouse/obj/Debug/WindowAbout.baml
+/Clickless Mouse/Clickless Mouse/obj/Debug/WindowAbout.g.cs
+/Clickless Mouse/Clickless Mouse/obj/Debug/WindowChangelog.baml
+/Clickless Mouse/Clickless Mouse/obj/Debug/WindowEULA.baml
+/Clickless Mouse/Clickless Mouse/obj/Debug/WindowManual.baml
+/Clickless Mouse/.vs/Clickless Mouse/FileContentIndex/cd79b021-9877-4cc4-a2e1-1b2f5fd5fada.vsidx
