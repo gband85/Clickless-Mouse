@@ -2,8 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/*
-/Clickless Mouse/.vs/*
-/Clickless Mouse/Clickless Mouse/obj/*
-/Clickless Mouse/Clickless Mouse/bin/*
-/Clickless Mouse/packages/*
+.vs/*
+Clickless Mouse/.vs/*
+Clickless Mouse/Clickless Mouse/obj/*
+Clickless Mouse/Clickless Mouse/bin/*
+Clickless Mouse/packages/*
