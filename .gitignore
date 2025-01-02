@@ -2,27 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/
-/Clickless Mouse/.vs/
-/Clickless Mouse/Clickless Mouse/obj/
-/Clickless Mouse/Clickless Mouse/bin/
-/Clickless Mouse/Clickless Mouse/bin/Debug/Clickless Mouse.exe
-/Clickless Mouse/Clickless Mouse/bin/Debug/Clickless Mouse.exe.config
-/Clickless Mouse/Clickless Mouse/bin/Debug/Clickless Mouse.pdb
-/Clickless Mouse/.vs/Clickless Mouse/FileContentIndex/01d86177-6473-46b3-b715-d41533e085ad.vsidx
-/Clickless Mouse/.vs/Clickless Mouse/FileContentIndex/1bba7064-3ceb-4956-89df-6527a786e1a6.vsidx
-/Clickless Mouse/.vs/Clickless Mouse/FileContentIndex/3d477ecf-cb1b-4288-bf03-767d6219e677.vsidx
-/Clickless Mouse/.vs/Clickless Mouse/FileContentIndex/e9c8c027-da90-4946-a450-7b1e9b5d6b82.vsidx
-/Clickless Mouse/.vs/Clickless Mouse/v17/.suo
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse.csproj.AssemblyReference.cache
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse.csproj.CoreCompileInputs.cache
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse.csproj.FileListAbsolute.txt
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse.csproj.GenerateResource.cache
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse.exe
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse.pdb
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse_MarkupCompile.cache
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse_MarkupCompile.i.cache
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse_MarkupCompile.i.lref
-/Clickless Mouse/Clickless Mouse/obj/Debug/Clickless Mouse_MarkupCompile.lref
-/Clickless Mouse/Clickless Mouse/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
-/Clickless Mouse/Clickless Mouse/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll
+/.vs/*
+/Clickless Mouse/.vs/*
+/Clickless Mouse/Clickless Mouse/obj/*
+/Clickless Mouse/Clickless Mouse/bin/*
+/Clickless Mouse/packages/*
