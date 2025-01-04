@@ -422,6 +422,9 @@ namespace Clickless_Mouse
         int previous_size = 0;
         void monitor_mouse()
         {
+            // Create the token source.
+            CancellationTokenSource cts = new CancellationTokenSource();
+
             int i = 0;
             int x1 = 0, x2 = 0, y1 = 0, y2 = 0;
 
@@ -615,9 +618,11 @@ namespace Clickless_Mouse
                                 new Action(() => { wm.Focus(); }));
                         }
 
-                        THRsquares_monitor = new Thread(new ThreadStart(monitor_squares));
-                        THRsquares_monitor.Priority = ThreadPriority.Highest;
-                        THRsquares_monitor.Start();
+                        ThreadPool.QueueUserWorkItem(new WaitCallback(monitor_squares), cts.Token);
+
+                        //THRsquares_monitor = new Thread(new ThreadStart(monitor_squares));
+                        //THRsquares_monitor.Priority = ThreadPriority.Highest;
+                        //THRsquares_monitor.Start();
                         i = 0;
 
                         previous_size = size;
@@ -626,7 +631,8 @@ namespace Clickless_Mouse
                 }
                 else if (i > loops_to_start_mouse_movement && squares_visible)
                 {
-                    THRsquares_monitor.Abort();
+                    cts.Cancel();
+                    //THRsquares_monitor.Abort();
                     squares_visible = false;
                     if (SL_enabled)
                         show_SL(false);
@@ -645,7 +651,7 @@ namespace Clickless_Mouse
             }
         }
 
-        void monitor_squares()
+        void monitor_squares(object? obj)
         {
             int i_SL = 0, i_SR = 0, i_SM = 0, i_SLH = 0, i_SRH = 0;
             int i_max = cursor_time_in_square_ms / loop_time_ms;
