@@ -1,6 +1,8 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using MsBox.Avalonia;
+using MsBox.Avalonia.Enums;
 using System;
 
 namespace Clickless_Mouse;
@@ -38,7 +40,7 @@ public partial class WindowEULA : Window
         }
         catch (Exception ex)
         {
-            //MessageBox.Show(ex.Message, "Error WE001", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBoxManager.GetMessageBoxStandard(ex.Message, "Error WE001", ButtonEnum.Ok, MsBox.Avalonia.Enums.Icon.Error);
         }
     }
 }

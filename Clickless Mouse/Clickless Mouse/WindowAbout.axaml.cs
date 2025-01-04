@@ -27,8 +27,8 @@ namespace Clickless_Mouse
 
         private void Beula_Click(object sender, RoutedEventArgs e)
         {
-            //WindowEULA w = new WindowEULA();
-            //w.Show();
+            WindowEULA w = new WindowEULA();
+            w.Show();
         }
 
         private void Lhomepage_PreviewMouseUp(object sender, PointerReleasedEventArgs e)
