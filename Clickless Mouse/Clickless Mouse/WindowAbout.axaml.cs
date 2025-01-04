@@ -48,8 +48,8 @@ namespace Clickless_Mouse
 
         private void Bchangelog_Click(object sender, RoutedEventArgs e)
         {
-            //WindowChangelog wc = new WindowChangelog();
-            //wc.Show();
+            WindowChangelog wc = new WindowChangelog();
+            wc.Show();
         }
     }
 }
