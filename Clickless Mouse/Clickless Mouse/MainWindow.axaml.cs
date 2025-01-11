@@ -51,5 +51,10 @@ namespace Clickless_Mouse
                 //System.Windows.MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        private void MImanual_Click(object sender, RoutedEventArgs e)
+        {
+            WindowManual wm = new WindowManual();
+            wm.Show();
+        }
     }
 }
