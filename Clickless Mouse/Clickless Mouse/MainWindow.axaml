@@ -22,7 +22,7 @@
 				<MenuItem x:Name="MIpolish" Header="Polish" Background="#FFEAEAEA"/>
 			</MenuItem>
 			<MenuItem x:Name="MIhelp" Header="Help">
-				<MenuItem x:Name="MImanual" Header="User Guide"  Background="#FFEAEAEA"/>
+				<MenuItem x:Name="MImanual" Header="User Guide"  Background="#FFEAEAEA" Click="MImanual_Click"/>
 			</MenuItem>
 			<MenuItem x:Name="MIabout" Header="About" Click="MIabout_Click">
 			</MenuItem>
