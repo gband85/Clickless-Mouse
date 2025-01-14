@@ -68,3 +68,72 @@ Clickless Mouse/Clickless Mouse/obj/Debug/*
 /Clickless Mouse/Clickless Mouse/obj/Debug/WindowEULA.g.i.cs
 /Clickless Mouse/Clickless Mouse/obj/Debug/WindowManual.g.cs
 /Clickless Mouse/Clickless Mouse/obj/Debug/WindowManual.g.i.cs
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Base.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Controls.ColorPicker.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Controls.DataGrid.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Controls.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.DesignerSupport.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Desktop.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Diagnostics.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Dialogs.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Fonts.Inter.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.FreeDesktop.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Markup.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Markup.Xaml.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Metal.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.MicroCom.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Native.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.OpenGL.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Remote.Protocol.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Skia.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Themes.Fluent.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Themes.Simple.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Vulkan.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.Win32.dll
+/Clickless Mouse/bin/Debug/net8.0/Avalonia.X11.dll
+/Clickless Mouse/bin/Debug/net8.0/Clickless Mouse.deps.json
+/Clickless Mouse/bin/Debug/net8.0/Clickless Mouse.dll
+/Clickless Mouse/bin/Debug/net8.0/Clickless Mouse.exe
+/Clickless Mouse/bin/Debug/net8.0/Clickless Mouse.pdb
+/Clickless Mouse/bin/Debug/net8.0/Clickless Mouse.runtimeconfig.json
+/Clickless Mouse/bin/Debug/net8.0/DialogHost.Avalonia.dll
+/Clickless Mouse/bin/Debug/net8.0/GroupBox.Avalonia.dll
+/Clickless Mouse/bin/Debug/net8.0/HarfBuzzSharp.dll
+/Clickless Mouse/bin/Debug/net8.0/MicroCom.Runtime.dll
+/Clickless Mouse/bin/Debug/net8.0/MsBox.Avalonia.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/linux-arm/native/libHarfBuzzSharp.so
+/Clickless Mouse/bin/Debug/net8.0/runtimes/linux-arm/native/libSkiaSharp.so
+/Clickless Mouse/bin/Debug/net8.0/runtimes/linux-arm64/native/libHarfBuzzSharp.so
+/Clickless Mouse/bin/Debug/net8.0/runtimes/linux-arm64/native/libSkiaSharp.so
+/Clickless Mouse/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libHarfBuzzSharp.so
+/Clickless Mouse/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libSkiaSharp.so
+/Clickless Mouse/bin/Debug/net8.0/runtimes/linux-x64/native/libHarfBuzzSharp.so
+/Clickless Mouse/bin/Debug/net8.0/runtimes/linux-x64/native/libSkiaSharp.so
+/Clickless Mouse/bin/Debug/net8.0/runtimes/osx/native/libAvaloniaNative.dylib
+/Clickless Mouse/bin/Debug/net8.0/runtimes/osx/native/libHarfBuzzSharp.dylib
+/Clickless Mouse/bin/Debug/net8.0/runtimes/osx/native/libSkiaSharp.dylib
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-arm64/native/av_libglesv2.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-arm64/native/libHarfBuzzSharp.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-arm64/native/libSkiaSharp.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-x64/native/av_libglesv2.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-x64/native/libHarfBuzzSharp.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-x64/native/libSkiaSharp.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-x86/native/av_libglesv2.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-x86/native/libHarfBuzzSharp.dll
+/Clickless Mouse/bin/Debug/net8.0/runtimes/win-x86/native/libSkiaSharp.dll
+/Clickless Mouse/bin/Debug/net8.0/SkiaSharp.dll
+/Clickless Mouse/bin/Debug/net8.0/System.IO.Pipelines.dll
+/Clickless Mouse/bin/Debug/net8.0/Tmds.DBus.Protocol.dll
+/Clickless Mouse/obj/Debug/net8.0/apphost.exe
+/Clickless Mouse/obj/Debug/net8.0/Avalonia/Clickless Mouse.dll
+/Clickless Mouse/obj/Debug/net8.0/Avalonia/Clickless Mouse.pdb
+/Clickless Mouse/obj/Debug/net8.0/Avalonia/references
+/Clickless Mouse/obj/Debug/net8.0/Clickles.D6C1ABB9.Up2Date
+/Clickless Mouse/obj/Debug/net8.0/Clickless Mouse.csproj.BuildWithSkipAnalyzers
+/Clickless Mouse/obj/Debug/net8.0/Clickless Mouse.csproj.CoreCompileInputs.cache
+/Clickless Mouse/obj/Debug/net8.0/Clickless Mouse.csproj.FileListAbsolute.txt
+/Clickless Mouse/obj/Debug/net8.0/Clickless Mouse.genruntimeconfig.cache
+/Clickless Mouse/obj/Debug/net8.0/Clickless Mouse.sourcelink.json
+/Clickless Mouse/obj/Debug/net8.0/ref/Clickless Mouse.dll
+/Clickless Mouse/obj/Debug/net8.0/refint/Avalonia/Clickless Mouse.dll
