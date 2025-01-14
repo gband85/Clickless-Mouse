@@ -4,76 +4,124 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:Clickless_Mouse"
 		xmlns:gb="using:GroupBox.Avalonia.Controls"
-        mc:Ignorable="d" d:DesignWidth="641" d:DesignHeight="512"
+        mc:Ignorable="d" d:DesignWidth="685" d:DesignHeight="550"
         x:Class="Clickless_Mouse.MainWindow"
-        Title="Clickless Mouse" Height="512" Width="641" FontSize="14">
-	<Grid>
+        Title="Clickless Mouse" Padding="0" Height="512" Width="700" FontSize="13">
+
+	<Grid ShowGridLines="True">
 		<!-- Menu -->
-		<Menu x:Name="Mmain" Height="28" Background="#FFEAEAEA" VerticalAlignment="Top" FontSize="13" Padding="0,2,2,0">
-			<MenuItem x:Name="MIfile" Header="File">
-				<MenuItem x:Name="MIexit" Header="Exit" Background="#FFEAEAEA" />
-			</MenuItem>
-			<MenuItem x:Name="MIrestore" Header="Restore">
-				<MenuItem x:Name="MIdefault_colors" Background="#FFEAEAEA" Header="Default Square Colors"/>
-				<MenuItem x:Name="MIdefault_settings" Background="#FFEAEAEA" Header="Default Settings"/>
-			</MenuItem>
-			<MenuItem x:Name="MIlanguage" Header="Language">
-				<MenuItem x:Name="MIenglish" Header="English" Background="#FFEAEAEA"/>
-				<MenuItem x:Name="MIpolish" Header="Polish" Background="#FFEAEAEA"/>
-			</MenuItem>
-			<MenuItem x:Name="MIhelp" Header="Help">
-				<MenuItem x:Name="MImanual" Header="User Guide"  Background="#FFEAEAEA" Click="MImanual_Click"/>
-			</MenuItem>
-			<MenuItem x:Name="MIabout" Header="About" Click="MIabout_Click">
-			</MenuItem>
-		</Menu>
-		<gb:GroupBox x:Name="GBmain_settings" Header="Main Settings" HorizontalAlignment="Left" Height="271" Margin="10,29,0,0" VerticalAlignment="Top" Width="308" Foreground="Black">
-			<Grid>
-				<CheckBox x:Name="CHBLMB" Content="LMB click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-				<CheckBox x:Name="CHBRMB" Content="RMB click" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
-				<CheckBox x:Name="CHBdoubleLMB" Content="LMB double click" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
-				<CheckBox x:Name="CHBholdLMB" Content="LMB holding" HorizontalAlignment="Left" Margin="142,10,0,0" VerticalAlignment="Top"/>
-				<CheckBox x:Name="CHBholdRMB" Content="RMB holding" HorizontalAlignment="Left" Margin="142,40,0,0" VerticalAlignment="Top"/>
-				<CheckBox x:Name="CHBscreen_panning" Content="Screen panning" HorizontalAlignment="Left" Margin="142,70,0,0" VerticalAlignment="Top"/>
-				<TextBlock x:Name="Lcursor_idle_before_squares_appear" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="Cursor idle time before squares appear [ms]:" VerticalAlignment="Top" Height="41" Width="220"/>
-				<TextBox VerticalContentAlignment="Center" x:Name="TBcursor_idle_before_squares_appear" HorizontalAlignment="Left" Height="23" Margin="236,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-				<TextBlock x:Name="Ltime_to_start_mouse" HorizontalAlignment="Left" Margin="10,149,0,0" TextWrapping="Wrap" Text="Time to start mouse movement after squares appear [ms]:" VerticalAlignment="Top" Height="41" Width="220"/>
-				<TextBox VerticalContentAlignment="Center" x:Name="TBtime_to_start_mouse" HorizontalAlignment="Left" Height="23" Margin="236,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
-				<TextBlock x:Name="Lcursor_time_in_square" HorizontalAlignment="Left" Margin="10,198,0,0" TextWrapping="Wrap" Text="Cursor time in square to register a click [ms]:" VerticalAlignment="Top" Height="41" Width="220"/>
-				<TextBox VerticalContentAlignment="Center" x:Name="TBcursor_time_in_square" HorizontalAlignment="Left" Height="23" Margin="236,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="400" />
+			<ColumnDefinition Width="270"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="23"/>
+			<RowDefinition Height="300"/>
+			<RowDefinition Height="200"/>
+		</Grid.RowDefinitions>
+		<DockPanel Grid.Row="0" Height="23">
+			<Menu DockPanel.Dock="Top" Name="Mmain" Height="23" VerticalAlignment="Top" FontSize="13" Padding="0,2,2,0">
+				<MenuItem Name="MIfile" Header="File">
+					<MenuItem Name="MIexit" Header="Exit"/>
+				</MenuItem>
+				<MenuItem Name="MIrestore" Header="Restore">
+					<MenuItem Name="MIdefault_colors" Background="#FFEAEAEA" Header="Default Square Colors"/>
+					<MenuItem Name="MIdefault_settings" Background="#FFEAEAEA" Header="Default Settings"/>
+				</MenuItem>
+				<MenuItem Name="MIlanguage" Header="Language">
+					<MenuItem Name="MIenglish" Header="English" Background="#FFEAEAEA"/>
+					<MenuItem Name="MIpolish" Header="Polish" Background="#FFEAEAEA"/>
+				</MenuItem>
+				<MenuItem Name="MIhelp" Header="Help">
+					<MenuItem Name="MImanual" Header="User Guide"  Background="#FFEAEAEA" Click="MImanual_Click"/>
+				</MenuItem>
+				<MenuItem Name="MIabout" Header="About" Click="MIabout_Click"/>
+			</Menu>
+		</DockPanel>
+		<gb:GroupBox Grid.Column="0" Grid.Row="1" Name="GBmain_settings" Header="Main Settings"  Width="370" Margin="15,10,0,0" HorizontalAlignment="Left">
+			<Grid >
+						<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="240" />
+			<ColumnDefinition Width="180"/>
+		</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="50"/>
+				</Grid.RowDefinitions>
+
+				
+				<CheckBox Name="CHBLMB" Content="LMB click" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Row="0"/>
+				<CheckBox Name="CHBRMB" Content="RMB click" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Row="1"/>
+				<CheckBox Name="CHBdoubleLMB" Content="LMB double click" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Row="2"/>
+				<CheckBox Name="CHBholdLMB" Content="LMB holding" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+				<CheckBox Name="CHBholdRMB" Content="RMB holding" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+				<CheckBox Name="CHBscreen_panning" Content="Screen panning" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+				<TextBlock Name="Lcursor_idle_before_squares_appear" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Cursor idle time before squares appear [ms]:" VerticalAlignment="Center" Width="220" Grid.Column="0" Grid.Row="3"/>
+				<TextBox VerticalContentAlignment="Center" Name="TBcursor_idle_before_squares_appear" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="50" Grid.Column="1" Grid.Row="3"/>
+				<TextBlock Name="Ltime_to_start_mouse" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Time to start mouse movement after squares appear [ms]:" VerticalAlignment="Center" Width="220" Grid.Row="4"/>
+				<TextBox VerticalContentAlignment="Center" Name="TBtime_to_start_mouse" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="50" Grid.Column="1" Grid.Row="4"/>
+				<TextBlock Name="Lcursor_time_in_square" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Cursor time in square to register a click [ms]:" VerticalAlignment="Center" Width="220" Grid.Row="5" />
+				<TextBox VerticalContentAlignment="Center" Name="TBcursor_time_in_square" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="50" Grid.Column="1" Grid.Row="5"/>
 
 			</Grid>
 		</gb:GroupBox>
-		<gb:GroupBox x:Name="GBother_settings" Header="Other Settings" HorizontalAlignment="Left" Height="155" Margin="10,305,0,0" VerticalAlignment="Top" Width="308">
-			<Grid>
-				<CheckBox x:Name="CHBrun_at_startup" Content="Run when computer starts" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-				<CheckBox x:Name="CHBstart_minimized" Content="Start minimized" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top"/>
-				<CheckBox x:Name="CHBminimize_to_tray" Content="Minimize to tray" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
-				<CheckBox x:Name="CHBcheck_for_updates" Content="Check for updates automatically"
-                          HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" FontSize="14"
+		<gb:GroupBox Grid.Column="0" Grid.Row="2" Name="GBother_settings" Header="Other Settings" HorizontalAlignment="Left"  Margin="15,20,0,0" VerticalAlignment="Top" Width="370" Height="150">
+			<StackPanel>
+				<CheckBox Name="CHBrun_at_startup" Content="Run when computer starts" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
+				<CheckBox Name="CHBstart_minimized" Content="Start minimized" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
+				<CheckBox Name="CHBminimize_to_tray" Content="Minimize to tray" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
+				<CheckBox Name="CHBcheck_for_updates" Content="Check for updates automatically" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"
                           />
+			</StackPanel>
+		</gb:GroupBox>
+		<gb:GroupBox Name="GBsquare_settings" Header="Squares Settings" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" >
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="150" />
+					<ColumnDefinition Width="291"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="40"/>
+				</Grid.RowDefinitions>
+				
+				
+				
+				<TextBlock Name="Ljsquare_size" Text="Size [px]:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+				<TextBox Name="TBsquare_size" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0" Width="60"/>
+				<TextBlock Name="Lsquare_border" Text="Border width [px]:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Row="1"/>
+				
+				<TextBox Name="TBsquare_border"  HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Width="60"/>
+				<TextBlock Name="Lsquare_color1" Text="Color 1:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"/>
+				<TextBox Name="TBsquare_color1" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Width="60"/>
+				<TextBlock Name="Lsquare_color2" Text="Color 2:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3"/>
+				<TextBox Name="TBsquare_color2" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3" Width="60"/>
+				<TextBlock Name="Lmin_square_size" Text="Minimum size [%]:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="4"/>
+				<TextBox Name="TBmin_square_size" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4" Width="60"/>
 			</Grid>
 		</gb:GroupBox>
-		<gb:GroupBox x:Name="GBsquare_settings" Header="Squares Settings" HorizontalAlignment="Left" Height="188" Margin="323,33,0,0" VerticalAlignment="Top" Width="291">
-			<Grid>
-				<Label x:Name="Lsquare_size" Content="Size [px]:" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top"/>
-				<Label x:Name="Lsquare_border" Content="Border width [px]:" HorizontalAlignment="Left" Margin="5,40,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-				<Label x:Name="Lsquare_color1" Content="Color 1:" HorizontalAlignment="Left" Margin="5,70,0,0" VerticalAlignment="Top"/>
-				<Label x:Name="Lsquare_color2" Content="Color 2:" HorizontalAlignment="Left" Margin="5,100,0,0" VerticalAlignment="Top"/>
-				<Label x:Name="Lmin_square_size" Content="Minimum size [%]:" HorizontalAlignment="Left" Margin="5,130,0,0" VerticalAlignment="Top"/>
-				<TextBox x:Name="TBsquare_size" HorizontalAlignment="Left" Height="23" Margin="171,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
-				<TextBox x:Name="TBsquare_border"  HorizontalAlignment="Left" Height="23" Margin="171,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60"/>
-				<TextBox x:Name="TBsquare_color1" HorizontalAlignment="Left" Height="23" Margin="171,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95"/>
-				<TextBox x:Name="TBsquare_color2" HorizontalAlignment="Left" Height="23" Margin="171,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95"/>
-				<TextBox x:Name="TBmin_square_size" HorizontalAlignment="Left" Height="23" Margin="171,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
-			</Grid>
-		</gb:GroupBox>
-		<gb:GroupBox x:Name="GBrecommended_square_size" Header="Recommended Square Size" HorizontalAlignment="Left" Height="135" Margin="323,226,0,0" VerticalAlignment="Top" Width="291">
-			<Grid>
-				<Label x:Name="Lscreen_size" Content="Diagonal screen size [in]:" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-				<TextBox x:Name="TBscreen_size" HorizontalAlignment="Left" Height="23" Margin="172,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45"/>
-				<Label x:Name="Lscreen_resolution" Content="Screen resolution:" HorizontalAlignment="Left" Margin="5,42,0,0" VerticalAlignment="Top"/>
-				<Button x:Name="Bset_recommended_square" Background="#FFEAEAEA" Content="Set recommended square size" HorizontalAlignment="Left" Margin="27,74,0,0" VerticalAlignment="Top" Width="225" Height="33" />
+		<gb:GroupBox Grid.Column="1" Grid.Row="2" Name="GBrecommended_square_size" Header="Recommended Square Size" HorizontalAlignment="Left" Margin="15,20,0,0" VerticalAlignment="Top" Height="160">
+			<Grid ShowGridLines="True">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="150" />
+					<ColumnDefinition Width="150"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="40"/>
+					<RowDefinition Height="40"/>
+				</Grid.RowDefinitions>
+				<Label Name="Lscreen_size" Content="Diagonal screen size [in]:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+				<TextBox Name="TBscreen_size" HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" Grid.Row="0" Grid.Column="1"/>
+				<Label Name="Lscreen_resolution" Content="Screen resolution:" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+				<Button Name="Bset_recommended_square" Background="#FFEAEAEA" Content="Set recommended square size" Margin="0,0,0,0" VerticalAlignment="Center" Width="225" Grid.Row="2" Grid.ColumnSpan="2"/>
 			</Grid>
 		</gb:GroupBox>
 	
