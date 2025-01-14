@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clickless Mouse", "Clickless Mouse\Clickless Mouse.csproj", "{B1042EFC-35A9-4DFA-9312-B463B51E6A2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clickless Mouse", "Clickless Mouse\Clickless Mouse.csproj", "{B1042EFC-35A9-4DFA-9312-B463B51E6A2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
