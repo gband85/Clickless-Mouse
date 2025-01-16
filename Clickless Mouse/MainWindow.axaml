@@ -4,6 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:local="clr-namespace:Clickless_Mouse"
 		xmlns:gb="using:GroupBox.Avalonia.Controls"
+		xmlns:p="clr-namespace:Clickless_Mouse.Properties"
         mc:Ignorable="d" d:DesignWidth="685" d:DesignHeight="550"
         x:Class="Clickless_Mouse.MainWindow"
         Title="Clickless Mouse" Padding="0" Height="512" Width="700" FontSize="13">
@@ -21,21 +22,21 @@
 		</Grid.RowDefinitions>
 		<DockPanel Grid.Row="0" Height="23">
 			<Menu DockPanel.Dock="Top" Name="Mmain" Height="23" VerticalAlignment="Top" FontSize="13" Padding="0,2,2,0">
-				<MenuItem Name="MIfile" Header="File">
-					<MenuItem Name="MIexit" Header="Exit"/>
+				<MenuItem Name="MIfile" Header="{x:Static p:Resources.Main_FileMenu}">
+					<MenuItem Name="MIexit" Header="{x:Static p:Resources.Main_FileExit}"/>
 				</MenuItem>
-				<MenuItem Name="MIrestore" Header="Restore">
-					<MenuItem Name="MIdefault_colors" Background="#FFEAEAEA" Header="Default Square Colors"/>
-					<MenuItem Name="MIdefault_settings" Background="#FFEAEAEA" Header="Default Settings"/>
+				<MenuItem Name="MIrestore" Header="{x:Static p:Resources.Main_RestoreMenu}">
+					<MenuItem Name="MIdefault_colors" Background="#FFEAEAEA" Header="{x:Static p:Resources.Main_RestoreColors}"/>
+					<MenuItem Name="MIdefault_settings" Background="#FFEAEAEA" Header="{x:Static p:Resources.Main_RestoreAll}"/>
 				</MenuItem>
-				<MenuItem Name="MIlanguage" Header="Language">
-					<MenuItem Name="MIenglish" Header="English" Background="#FFEAEAEA"/>
-					<MenuItem Name="MIpolish" Header="Polish" Background="#FFEAEAEA"/>
+				<MenuItem Name="MIlanguage" Header="{x:Static p:Resources.Main_LanguageMenu}">
+					<MenuItem Name="MIenglish" Header="{x:Static p:Resources.Main_LanguageEnglish}" Background="#FFEAEAEA"/>
+					<MenuItem Name="MIpolish" Header="{x:Static p:Resources.Main_LanguagePolish}" Background="#FFEAEAEA"/>
 				</MenuItem>
-				<MenuItem Name="MIhelp" Header="Help">
-					<MenuItem Name="MImanual" Header="User Guide"  Background="#FFEAEAEA" Click="MImanual_Click"/>
+				<MenuItem Name="MIhelp" Header="{x:Static p:Resources.Main_HelpMenu}">
+					<MenuItem Name="MImanual" Header="{x:Static p:Resources.Main_HelpManual}"  Background="#FFEAEAEA" Click="MImanual_Click"/>
 				</MenuItem>
-				<MenuItem Name="MIabout" Header="About" Click="MIabout_Click"/>
+				<MenuItem Name="MIabout" Header="{x:Static p:Resources.Main_AboutMenu}" Click="MIabout_Click"/>
 			</Menu>
 		</DockPanel>
 		<gb:GroupBox Grid.Column="0" Grid.Row="1" Name="GBmain_settings" Header="Main Settings"  Width="370" Margin="15,10,0,0" HorizontalAlignment="Left">
